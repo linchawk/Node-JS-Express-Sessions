@@ -39,7 +39,7 @@ app.post('/dologin', function(request, response) {
   var usrName = request.body.usrName;
   var password = request.body.password;
   response.status(200);
-  if(usrName === 'linchawk' && password === 'rockybalboa') {
+  if(usrName === 'rambo' && password === 'rockybalboa') {
     request.session.usrName = usrName
     request.session.token = usrName + 'salt';
     response.redirect('/index');
